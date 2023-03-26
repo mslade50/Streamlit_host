@@ -4,20 +4,10 @@ import numpy as np
 import datetime as dt
 from datetime import date
 from datetime import timedelta
-import smtplib, ssl
 import os
-import xlsxwriter
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
-from pandas import ExcelWriter
-from email.message import EmailMessage
 import yfinance as yf
-from yahoo_fin import options as op
 import pandas as pd
-import pandas_datareader.data as web
-import scipy.stats
 import streamlit as st
-import mpld3
 
 
 def seasonals_chart(tick):
