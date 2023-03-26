@@ -1,0 +1,6 @@
+os
+matplotlib.pyplot
+pandas
+yfinance
+datetime
+numpy
