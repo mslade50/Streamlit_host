@@ -528,8 +528,8 @@ for file_name in file_names:
         for ticker in tickers:
             megas_list.append(ticker.strip("'"))
 
-# Remove duplicates
-megas_list = list(set(megas_list))
+# Remove duplicates and empty strings
+megas_list = [stock for stock in set(megas_list) if stock]
 
 # Run the script with the updated megas_list
 for stock in megas_list:
