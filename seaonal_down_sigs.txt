@@ -1,1 +1,1 @@
-['USDJPY=X']
+['BLNK', 'USDJPY=X']
