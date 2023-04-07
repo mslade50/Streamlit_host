@@ -3,6 +3,7 @@ import numpy as np
 import datetime as dt
 from datetime import date
 from datetime import timedelta
+import requests
 import os
 import yfinance as yf
 import pandas as pd
@@ -513,8 +514,23 @@ def seasonals_chart(tick):
 	)
 	st.plotly_chart(fig)
 
-megas_list=['AAPL','AMD','AMZN','GOOG','GS','HD','JPM','MSFT','NFLX','NKE','NVDA','TSLA','TSM','UNH','V','WMT','XOM','^DJI','^RUT','^NDX','QQQ',
-'^GSPC','SPY','^SOX','^IXIC','^RUO','GC=F','SI=F','CL=F','ZW=F','NG=F','^VIX','DX-Y.NYB','EURUSD=X','GBPUSD=X','USDJPY=X','USDCHF=X']
-for stock in megas_list:
-	seasonals_chart(stock)
+# Download and parse the content of the text files from the GitHub repository
+base_url = "https://raw.githubusercontent.com/mslade50/Streamlit_host/main/"
+file_names = ["seasonal_up_sigs.txt", "seaonal_down_sigs.txt", "tmr_up.txt", "tmr_down.txt"]
 
+megas_list = []
+for file_name in file_names:
+    url = base_url + file_name
+    response = requests.get(url)
+    if response.status_code == 200:
+        content = response.text.strip()
+        tickers = content.strip("[]").split(", ")
+        for ticker in tickers:
+            megas_list.append(ticker.strip("'"))
+
+# Remove duplicates
+megas_list = list(set(megas_list))
+
+# Run the script with the updated megas_list
+for stock in megas_list:
+    seasonals_chart(stock)
