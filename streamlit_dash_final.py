@@ -1,14 +1,14 @@
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import datetime as dt
 from datetime import date
 from datetime import timedelta
+import requests
 import os
 import yfinance as yf
 import pandas as pd
 import streamlit as st
-
+import plotly.graph_objs as go
 
 def seasonals_chart(tick):
 	ticker=tick
@@ -18,9 +18,25 @@ def seasonals_chart(tick):
 	adjust=0
 	plot_ytd="Yes"
 	all_=""
+	end_date=dt.datetime(2022,12,30)
 
 	spx1=yf.Ticker(ticker)
-	spx = spx1.history(period="max")
+	spx = spx1.history(period="max",end=end_date)
+	spx_rank=spx1.history(period="max")
+	# Calculate trailing 5-day returns
+	spx_rank['Trailing_5d_Returns'] = (spx_rank['Close'] / spx_rank['Close'].shift(5)) - 1
+
+	# Calculate trailing 21-day returns
+	spx_rank['Trailing_21d_Returns'] = (spx_rank['Close'] / spx_rank['Close'].shift(21)) - 1
+
+	# Calculate percentile ranks for trailing 5-day returns on a rolling 750-day window
+	spx_rank['Trailing_5d_percentile_rank'] = spx_rank['Trailing_5d_Returns'].rolling(window=750).apply(lambda x: pd.Series(x).rank(pct=True).iloc[-1])
+
+	# Calculate percentile ranks for trailing 21-day returns on a rolling 750-day window
+	spx_rank['Trailing_21d_percentile_rank'] = spx_rank['Trailing_21d_Returns'].rolling(window=750).apply(lambda x: pd.Series(x).rank(pct=True).iloc[-1])
+
+	dr21_rank=(spx_rank['Trailing_21d_percentile_rank'][-1]*100).round(2)
+	dr5_rank=(spx_rank['Trailing_5d_percentile_rank'][-1]*100).round(2)
 
 	spx["log_return"] = np.log(spx["Close"] / spx["Close"].shift(1))*100
 
@@ -34,7 +50,7 @@ def seasonals_chart(tick):
 
 	#second dataframe explicity to count the number of trading days so far this year
 	now = dt.datetime.now()+timedelta(days=1)
-	days = yf.download(ticker, start="2023-01-01", end=now)
+	days = yf.download(ticker, start="2022-12-31", end=now)
 	days["log_return"] = np.log(days["Close"] / days["Close"].shift(1))*100
 	days['day_of_year'] = days.index.day_of_year
 	days['this_yr']=days.log_return.cumsum()
@@ -395,13 +411,10 @@ def seasonals_chart(tick):
 	all_21d=r_21_ptile.values[0]
 	mt_21d=r_21_ptile_mt.values[0]
 	all_avg=((all_5d+all_10d+all_21d)/3).round(2)
-	cycle_avg=true_cycle_rnk
-	total_avg=((all_avg+true_cycle_rnk)/2).round(2)
-	# print(f'''Fwd cycle rank is {true_cycle_rnk}
-	# Fwd cycle delta is {abs(true_cycle_rnk-trailing_cycle).round(2)}
-	# Fwd all rank is {all_avg}
-	# Fwd Avg rank is {total_avg}
-	# ''')
+	cycle_avg=true_cycle_rnk.round(1)
+	total_avg=((all_avg+true_cycle_rnk)/2).round(1) 
+	trailing_21_rank=dr21_rank.round(1)
+	trailing_5_rank=dr5_rank.round(1)
 
 
 	if ticker == '^GSPC':
@@ -409,35 +422,115 @@ def seasonals_chart(tick):
 	else:
 		ticker2 = ticker
 
-
+	length= len(days) + adjust
 	c=days.Close[-1]
 
 	dfm=pd.DataFrame(yr_mid_master)
 	dfm1=dfm.mean()
+	upper=(np.std(dfm))*2+dfm1
+	lower=dfm1-(np.std(dfm))*2
+
 	s4=dfm1.cumsum()
-
-
 	dfy=pd.DataFrame(yr_master)
 	dfy1=dfy.mean()
 	s3=dfy1.cumsum()
-	print(length)
 	##Mean Return paths chart (looks like a classic 'seasonality' chart)
 	# plot2=plt.figure(2)
-	plot2=plt.figure()
-	s4.plot.line(title=f"Mean return path for {ticker2} in years {start}-present",label=f'{cycle_label}', color='orange')
-	if plot_ytd == "Yes":
-		days2['this_yr'].plot.line(label='Year to Date',color='green')
-	plt.axvline(length,linestyle='dashed',linewidth=1,color='grey')
-	plt.legend()
-	# mpld3.plugins.connect(plot2, None)
-	# html_fig = mpld3.fig_to_html(plot2)
-	# st.write(html_fig, unsafe_allow_html=True)
+	fig = go.Figure()
 
-	st.pyplot(plot2)
-	# st.pyplot(fig=plot2)
+	fig.add_trace(go.Scatter(x=s4.index, y=s4.values, mode='lines', name=cycle_label, line=dict(color='orange')))
+	if plot_ytd == 'Yes':
+	    fig.add_trace(go.Scatter(x=days2.index, y=days2['this_yr'], mode='lines', name='Year to Date', line=dict(color='green')))
 
-megas_list=['AAPL','AMD','AMZN','GOOG','GS','HD','JPM','MSFT','NFLX','NKE','NVDA','TSLA','TSM','UNH','V','WMT','XOM','^DJI','^RUT','^NDX',
-'^GSPC','^SOX','GC=F','SI=F','CL=F','ZW=F','^VIX' ]
+	y1 = max(s4.max(), days2['this_yr'].max()) if plot_ytd == 'Yes' else s4.max()
+	y0=min(s4.min(),days2['this_yr'].min(),0)
+	# Assuming 'length' variable is defined and within the range of the x-axis
+	length_value = length
+
+	# Interpolate Y value at the specified X coordinate
+	y_value_at_length = np.interp(length_value, s4.index, s4.values)
+
+	# Add a white dot at the specified X coordinate and the interpolated Y value
+	fig.add_trace(go.Scatter(x=[length_value], y=[y_value_at_length], mode='markers', marker=dict(color='white', size=8), name='White Dot' ,showlegend=False))
+	def text_color(value, reverse=False):
+	    if not reverse:
+	        if value >= 85:
+	            return 'green'
+	        elif value <= 15:
+	            return 'red'
+	        else:
+	            return 'white'
+	    else:
+	        if value >= 85:
+	            return 'red'
+	        elif value <= 15:
+	            return 'green'
+	        else:
+	            return 'white'
+	def create_annotation(x, y, text, color):
+	    return dict(
+	        x=x,
+	        y=y,
+	        xref='paper',
+	        yref='paper',
+	        text=text,
+	        showarrow=False,
+	        font=dict(size=12, color=color),
+	        bgcolor='rgba(0, 0, 0, 0.5)',
+	        bordercolor='grey',
+	        borderwidth=1,
+	        borderpad=4,
+	        align='left'
+	    )
+
+	annotations = [
+	    create_annotation(0.4, -0.22, f"Cycle Avg: {cycle_avg}", text_color(cycle_avg)),
+	    create_annotation(0.55, -0.22, f"Total Avg: {total_avg}", text_color(total_avg)),
+	    create_annotation(0.85, -0.22, f"Trailing 21 Rank: {trailing_21_rank}", text_color(trailing_21_rank, reverse=True)),
+	    create_annotation(1.04, -0.22, f"Trailing 5 Rank: {trailing_5_rank}", text_color(trailing_5_rank, reverse=True)),
+	]
+	fig.update_layout(
+	    title=f"Mean return path for {ticker2} in years {start}-present",
+	    legend=dict(
+	        bgcolor='rgba(0,0,0,0)',
+	        font=dict(color='White'),
+	        itemclick='toggleothers',
+	        itemdoubleclick='toggle',
+	        traceorder='reversed',
+	        orientation='h',
+	        bordercolor='grey',
+	        borderwidth=1,
+	        x=-0.10,
+	        y=-0.135 
+	    ),
+	    xaxis=dict(title='', color='white',showgrid=False),
+	    yaxis=dict(title='Mean Return', color='white',showgrid=False),
+	    font=dict(color='white'),
+	    margin=dict(l=40, r=40, t=40, b=70),  # Increase bottom margin
+	    hovermode='x',
+	    plot_bgcolor='Black',
+	    paper_bgcolor='Black',
+	    annotations=annotations  # Use the new annotations list with colored text
+	)
+	st.plotly_chart(fig)
+
+# Download and parse the content of the text files from the GitHub repository
+base_url = "https://raw.githubusercontent.com/mslade50/Streamlit_host/main/"
+file_names = ["seasonal_up_sigs.txt", "seaonal_down_sigs.txt", "tmr_up.txt", "tmr_down.txt"]
+
+megas_list = []
+for file_name in file_names:
+    url = base_url + file_name
+    response = requests.get(url)
+    if response.status_code == 200:
+        content = response.text.strip()
+        tickers = content.strip("[]").split(", ")
+        for ticker in tickers:
+            megas_list.append(ticker.strip("'"))
+
+# Remove duplicates and empty strings
+megas_list = [stock for stock in set(megas_list) if stock]
+
+# Run the script with the updated megas_list
 for stock in megas_list:
-	seasonals_chart(stock)
-
+    seasonals_chart(stock)
