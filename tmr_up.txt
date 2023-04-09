@@ -1,1 +1,1 @@
-['XRAY', 'CIEN', 'SWK', 'DECK', 'SNPS', 'KMPR', 'DPZ', 'ELS', 'BWA', 'PZZA', 'MAA', 'AKR', 'SUI', 'ACM', 'VRE']
+['XRAY', 'CIEN', 'SWK', 'DECK', 'SNPS', 'KMPR', 'DPZ', 'ELS', 'BWA', 'PZZA', 'MAA', 'AKR', 'SUI', 'ACM']
