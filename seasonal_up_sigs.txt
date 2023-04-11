@@ -1,1 +1,1 @@
-['VRE', 'SUI', 'ELS', 'NNN', 'DPZ', 'MAA', 'GEN', 'XRAY', 'CIEN']
+['XRAY', 'GBPUSD=X', 'DECK', 'AKR', 'SWK', 'BWA', 'ELS', 'SUI', 'RYN', 'VRE', 'DPZ', 'PZZA', 'MAA', 'PB', 'ACM', '^SOX', 'SNPS', 'ENB', 'PRU']

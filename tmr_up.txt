@@ -1,1 +1,1 @@
-['XRAY', 'CIEN', 'SWK', 'DECK', 'SNPS', 'KMPR', 'DPZ', 'ELS', 'BWA', 'PZZA', 'MAA', 'AKR', 'SUI', 'ACM']
+['AVXL', 'GNTX', 'DECK', 'CGNX', 'TER', 'SNPS', 'AVT', 'ENB', 'ELS', 'BWA', 'MMS', 'PZZA', 'MAA', 'DOV', 'AKR', 'DRI', 'HST', 'CPT', 'ESS', 'VRE', 'PB', 'GEN', 'SO', '^SOX']
