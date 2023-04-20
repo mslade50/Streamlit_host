@@ -1,1 +1,1 @@
-[]
+['TREX', 'EOG', 'GGAL', 'HOLI', 'HOLI', 'OTEX', 'OTEX', 'FLR', 'VFC', 'VFC', 'WMT']

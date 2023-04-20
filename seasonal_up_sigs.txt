@@ -1,1 +1,1 @@
-['XRAY', 'GBPUSD=X', 'DECK', 'AKR', 'SWK', 'BWA', 'ELS', 'SUI', 'RYN', 'VRE', 'DPZ', 'PZZA', 'MAA', 'PB', 'ACM', '^SOX', 'SNPS', 'ENB', 'PRU']
+['MASI', 'ELV', 'MELI', 'IART', 'RSG', 'CVS', 'MYGN', 'WCN', 'ROP', '^VIX', 'RCL']

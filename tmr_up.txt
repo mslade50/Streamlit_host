@@ -1,1 +1,1 @@
-['AVXL', 'GNTX', 'DECK', 'CGNX', 'TER', 'SNPS', 'AVT', 'ENB', 'ELS', 'BWA', 'MMS', 'PZZA', 'MAA', 'DOV', 'AKR', 'DRI', 'HST', 'CPT', 'ESS', 'VRE', 'PB', 'GEN', 'SO', '^SOX']
+['AXS', 'INCY', 'TECH', 'TECH', 'MAG', 'IART', 'VRSK', 'ROP', 'ROP', 'AIZ', 'RSG', 'RSG', 'CHD']
