@@ -1,1 +1,1 @@
-['AXS', 'INCY', 'TECH', 'TECH', 'MAG', 'IART', 'VRSK', 'ROP', 'ROP', 'AIZ', 'RSG', 'RSG', 'CHD']
+['TECH', 'RSG']

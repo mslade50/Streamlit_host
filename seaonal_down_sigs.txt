@@ -1,1 +1,1 @@
-['BECN']
+['WMT', 'OTEX', 'FLR', 'VFC', 'HOLI', 'EOG']
