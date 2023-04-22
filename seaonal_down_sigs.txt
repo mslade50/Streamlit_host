@@ -1,1 +1,1 @@
-['WMT', 'OTEX', 'FLR', 'VFC', 'HOLI', 'EOG']
+['HOLI', 'VFC', 'GL', 'HLIT', 'MLCO', 'TREX', 'TDC', 'NOG', 'TS', 'HCSG', 'LEA', 'STM', 'GGAL', 'FFBC']
