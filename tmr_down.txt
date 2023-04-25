@@ -1,1 +1,1 @@
-['CYRX', 'CYRX', 'TREX', 'COHR', 'MKSI', 'CYTK', 'TXRH', 'TXRH', 'GOOGL', 'GOOGL', 'WWW', 'WWW', 'BKE', 'BKE', 'GOOG', 'GOOG', 'HLIT', 'IPG', 'VFC', 'CRI', 'CRI', 'PTC', 'LULU', 'WHR', 'ORLY', 'FFIN', 'AMGN', 'FFBC', 'FFBC', 'BIDU']
+['BLNK', 'COHR', 'ZBRA', 'TXRH', 'CMP', 'GOOGL', 'GOOG', 'TDC', 'WYNN', 'PEB', 'FFBC', 'UBSI', 'BIDU', 'AUDUSD=X']

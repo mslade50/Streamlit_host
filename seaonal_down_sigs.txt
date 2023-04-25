@@ -1,1 +1,1 @@
-['HOLI', 'VFC', 'GL', 'HLIT', 'MLCO', 'TREX', 'TDC', 'NOG', 'TS', 'HCSG', 'LEA', 'STM', 'GGAL', 'FFBC']
+['AMGN', 'TXRH', 'CYRX', 'VFC', 'HLIT', 'TREX', 'WWW', 'CRI', 'GOOG', 'GOOGL', 'IPG', 'MKSI', 'CYTK', 'ORLY', 'FFIN', 'WHR', 'FFBC', 'PTC', 'LULU', 'BKE']
