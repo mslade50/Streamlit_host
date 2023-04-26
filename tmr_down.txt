@@ -1,1 +1,1 @@
-['BLNK', 'COHR', 'ZBRA', 'TXRH', 'CMP', 'GOOGL', 'GOOG', 'TDC', 'WYNN', 'PEB', 'FFBC', 'UBSI', 'BIDU', 'AUDUSD=X']
+['EDU', 'BLNK', 'COHR', 'CMP', 'SWX', 'CHH', 'WYNN', 'IPG', 'ROIC', 'PEB', 'DFS', 'FFIN', 'BUD', 'UBSI', 'AUDUSD=X']
