@@ -1,1 +1,1 @@
-['APA', 'SANM', 'ADI', 'CCK', 'MCK', 'UNH']
+['SANM', 'PRDO', 'AXS', 'HEI', 'OHI', 'ADTN', 'ETR', 'AMT', 'SUI', 'MCK', 'JCI', 'UNH', 'PPL', 'CNC', 'XEL']
