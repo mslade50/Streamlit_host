@@ -1,1 +1,1 @@
-['MCK', 'APA', 'ADI', 'CCK', 'UNH']
+['ETR', 'MCK', 'AMT', 'XEL', 'OHI', 'SANM', 'HEI', 'ADTN', 'PPL']

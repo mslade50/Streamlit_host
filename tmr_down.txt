@@ -1,1 +1,1 @@
-['XPO', 'BLNK', 'COHR', 'PXD', 'SIG', 'BR', 'EBAY', 'ROIC', 'UBSI']
+['SKYW', 'PXD', 'ARLP', 'SIG', 'FTNT', 'RRC', 'DFS', 'EURUSD=X']
