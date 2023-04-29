@@ -1,1 +1,1 @@
-['SKYW', 'PXD', 'ARLP', 'SIG', 'FTNT', 'RRC', 'DFS', 'EURUSD=X']
+['SKYW', 'TTMI', 'PXD', 'RRC', 'ALL', 'EURUSD=X']

@@ -1,1 +1,1 @@
-['BLNK', 'ROIC', 'SIG', 'UBSI', 'XPO', 'COHR', 'BR', 'EBAY']
+['DFS', 'FTNT', 'PXD', 'SIG', 'ARLP']
