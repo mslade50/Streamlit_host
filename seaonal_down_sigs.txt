@@ -1,1 +1,1 @@
-['TTMI', 'EURUSD=X', 'PXD', 'RRC', 'ALL', 'SKYW']
+['EURUSD=X', 'TTE', 'BDX', 'ALL']

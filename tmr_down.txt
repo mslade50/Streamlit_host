@@ -1,1 +1,1 @@
-['EXPD', 'TTE', 'CRH', 'BDX', 'ALL', 'GSK']
+['PUK', 'KT', 'HAIN', 'CRH', 'GSK']

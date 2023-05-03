@@ -1,1 +1,1 @@
-['UNH', 'MCK', 'HEI', 'TNK', 'DRI', 'CNC', 'SUI']
+['SBAC', 'BRKR', 'DAR', 'AXS', 'SUI', 'MCK']
