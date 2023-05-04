@@ -1,1 +1,1 @@
-['SBAC', 'BRKR', 'DAR', 'AXS', 'SUI', 'MCK']
+['NEE', 'AVB', 'HLF', 'LNG', 'CPT', 'CME', 'TNP']
