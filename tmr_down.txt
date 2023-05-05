@@ -1,1 +1,1 @@
-['SCCO', 'EXPD', 'FORM', 'HA', 'PUK', 'CLF', 'KT', 'CRH']
+['WERN', 'SCCO', 'OLED', 'CHRW', 'UCTT', 'EXPD', 'HA', 'PAAS', 'LSTR', 'EMN', 'CLF', 'KT', 'UNP', 'HOG', 'OFC', 'STZ', 'IYT', '^DJT']

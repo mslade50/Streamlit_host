@@ -1,1 +1,1 @@
-['CRH', 'EURUSD=X', 'HAIN', 'GSK']
+['KT', 'CRH', 'EXPD', 'FORM', '^DJT', 'CLF', 'IFF', 'PUK']

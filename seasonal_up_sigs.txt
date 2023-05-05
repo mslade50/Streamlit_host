@@ -1,1 +1,1 @@
-['NEE', 'AVB', 'HLF', 'LNG', 'CPT', 'CME', 'TNP']
+['AMED', 'AVB', 'LNG', 'CPT', 'CME']
