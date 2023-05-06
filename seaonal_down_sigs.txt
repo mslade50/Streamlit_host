@@ -1,1 +1,1 @@
-['KT', 'CRH', 'EXPD', 'FORM', '^DJT', 'CLF', 'IFF', 'PUK']
+['UNP', 'OFC', 'WERN', 'KT', '^DJT', 'HA', 'LSTR', 'CHRW', 'EXPD', 'IYT', 'CLF', 'SCCO', 'OLED']

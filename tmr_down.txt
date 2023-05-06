@@ -1,1 +1,1 @@
-['WERN', 'SCCO', 'OLED', 'CHRW', 'UCTT', 'EXPD', 'HA', 'PAAS', 'LSTR', 'EMN', 'CLF', 'KT', 'UNP', 'HOG', 'OFC', 'STZ', 'IYT', '^DJT']
+['CENX', 'JBHT', 'SCCO', 'CHRW', 'UCTT', 'STLD', 'HA', 'BLDR', 'BEN', 'TRN', 'PAAS', 'INFY', 'NTAP', 'CVX', 'EMN', 'CLF', 'PCH', 'UNP', 'ROG', 'HOG', 'BXMT', 'CNI', 'ADEA', 'STZ']
