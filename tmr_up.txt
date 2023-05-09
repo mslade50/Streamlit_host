@@ -1,1 +1,1 @@
-['AMED', 'HDB', 'LNG', 'CPRX']
+['HDB', 'CPRX']
