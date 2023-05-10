@@ -1,1 +1,1 @@
-['CENX', 'CHRW', 'STLD', 'ARW', 'PLCE', 'TRN', 'LNW', 'PRDO', 'CVX', 'CLF', 'BAP', 'SKT', 'FMC', 'UNP', 'LSI', 'HOG', 'UDR', 'SPG', 'MAT', 'ESS', 'ADEA', 'MSFT', 'FFIN', 'PSA', 'KIM', 'HON']
+['CENX', 'STLD', 'ARW', 'WCC', 'LOW', 'PLCE', 'TRN', 'CRS', 'LNW', 'NTAP', 'PRDO', 'BAP', 'SKT', 'LSI', 'J', 'HOG', 'UDR', 'EPD', 'SPG', 'GL', 'MAT', 'MSFT', 'TJX', 'INTC', 'IBM', 'WBS', 'HON']

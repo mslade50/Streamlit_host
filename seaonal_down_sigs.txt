@@ -1,1 +1,1 @@
-['JBHT', 'SCCO', 'CHRW', 'BXMT', 'UNP', 'CENX', 'ROG', 'CLF', 'ADEA', 'PCH', 'HOG', 'STZ', 'HA', 'UCTT', 'PAAS', 'EMN', 'CNI']
+['CENX', 'FMC', 'HA', 'CHRW', 'CLF', 'UNP', 'ADEA', 'BAP', 'STLD', 'HOG', 'SPG', 'TRN', 'KIM', 'MSFT', 'FFIN', 'CVX']
