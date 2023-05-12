@@ -1,1 +1,1 @@
-['GLNG', 'ZBRA', 'UAA', 'CF']
+['LPSN', 'GLNG', 'UAA', 'SEM', 'CPRX', 'BR', 'PII', 'CF', 'IART', 'STE', 'ROP', 'USDZAR=X']

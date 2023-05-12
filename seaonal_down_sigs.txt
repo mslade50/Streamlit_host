@@ -1,1 +1,1 @@
-['J', 'CENX', 'NTAP', 'GL', 'PLCE', 'TJX', 'MAT', 'SPG', 'HON', 'SKT', 'LSI', 'TRN', 'ADEA', 'WCC', 'BAP', 'LOW', 'EPD', 'HOG', 'MSFT', 'STLD', 'ARW', 'LNW', 'UDR', 'WBS', 'INTC', 'PRDO']
+['ESTE', 'SPG', 'STLD', 'TJX', 'LXU', 'MAG', 'OFC', 'LOW', 'CRS', 'LSI', 'WBS', 'TRV', 'KIM', 'MAT']
