@@ -1,1 +1,1 @@
-['CF', 'ZBRA', 'UAA']
+['CF', 'IART', 'SEM', 'CPRX', 'ROP', 'GLNG', 'LPSN', 'STE', 'UAA', 'BR']
