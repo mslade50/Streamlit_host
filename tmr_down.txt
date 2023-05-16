@@ -1,1 +1,1 @@
-['ESTE', 'AVGO', 'SBRA', 'EPD', 'KDP', 'IBM']
+['ESTE', 'AVGO', 'IRM', 'G', 'CM', 'VMW', 'V']
