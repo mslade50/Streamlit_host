@@ -1,1 +1,1 @@
-['APPS', 'IFF', 'PWR', 'MTN']
+['LSCC', 'RMD', 'APPS', 'HD', 'C', 'AXP']

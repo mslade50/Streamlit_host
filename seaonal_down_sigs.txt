@@ -1,1 +1,1 @@
-['ESTE', 'VMW', 'AVGO', 'CM', 'V', 'IRM']
+['RY', 'PM', 'CM', 'USDCHF=X', 'G']

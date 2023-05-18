@@ -1,1 +1,1 @@
-['HDSN', 'MEOH', 'G', 'CM', 'RY', 'PM', 'USDCHF=X']
+['HDSN', 'PDCE', 'CM', 'ENB', 'RY', 'PM', 'USDCHF=X']
