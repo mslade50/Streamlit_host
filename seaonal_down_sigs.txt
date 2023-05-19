@@ -1,1 +1,1 @@
-['RY', 'PM', 'CM', 'USDCHF=X', 'G']
+['RY', 'USDCHF=X', 'ENB', 'CM', 'HDSN', 'PDCE']

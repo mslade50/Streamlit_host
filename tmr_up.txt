@@ -1,1 +1,1 @@
-['LSCC', 'RMD', 'APPS', 'HD', 'C', 'AXP']
+['LSCC', 'RMD', 'GES', 'CGNX', 'CRI', 'FRT', 'BSX', 'WMT', 'KO']
