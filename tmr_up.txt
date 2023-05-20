@@ -1,1 +1,1 @@
-['LSCC', 'RMD', 'GES', 'CGNX', 'CRI', 'FRT', 'BSX', 'WMT', 'KO']
+['ENTG', 'BCRX', 'LSCC', 'ASML', 'PRO', 'AZTA', 'CRL', 'CIB', 'CGNX', 'DHR', 'AVGO', 'SA', 'MRVL', 'CRI', 'GD', 'C', 'KBR', 'BSX', 'DEO', '^NYA']
