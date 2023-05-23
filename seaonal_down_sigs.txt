@@ -1,1 +1,1 @@
-['RY', 'USDCHF=X', 'CM', 'ENB', 'MELI', 'SAIA', 'MEOH', 'PDCE', 'MMP']
+['USDCHF=X', 'TCOM', 'AAP', 'EPC', 'SAIA', 'CELH', 'NVO']

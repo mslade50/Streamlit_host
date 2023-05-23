@@ -1,1 +1,1 @@
-['ENTG', 'BCRX', 'LSCC', 'ASML', 'PRO', 'AZTA', 'CRL', 'CIB', 'CGNX', 'DHR', 'AVGO', 'SA', 'MRVL', 'CRI', 'GD', 'C', 'KBR', 'BSX', 'DEO', '^NYA']
+['CORT', 'ENTG', 'BCRX', 'LSCC', 'CIEN', 'ASML', 'PRO', 'AZTA', 'GES', 'CRL', 'CIB', 'BRKR', 'SNPS', 'KMX', 'AVT', 'NATI', 'DHR', 'AVGO', 'SA', 'CRI', 'STT', 'NTRS', 'MLKN', 'DLTR', 'KBR', 'WMT', 'DEO', '^IXIC', '^NYA', 'EWZ']

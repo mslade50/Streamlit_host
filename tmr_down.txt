@@ -1,1 +1,1 @@
-['SAIA', 'SIG', 'AAP', 'NVO', 'EPC', 'TCOM', 'CELH', 'USDCHF=X']
+['SAIA', 'SIG', 'AEE']

@@ -1,1 +1,1 @@
-['WMT', 'GES', 'CGNX', 'LSCC', 'RMD', 'CRI', 'BSX', 'KO']
+['DHR', 'GD', 'LSCC', 'BSX', 'AZTA', 'PRO', 'BCRX', 'ENTG', 'EWJ', 'C', 'CRL', 'MRVL', 'CGNX']
