@@ -1,1 +1,1 @@
-['SAIA', 'SIG', 'AEE']
+['EPR', 'GOOD', 'CRM', 'BXMT', 'PEB', 'MAT', 'PEG', 'AEE', 'AWK', 'FE', 'USDCAD=X', 'XLU']
