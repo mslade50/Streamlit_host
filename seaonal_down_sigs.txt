@@ -1,1 +1,1 @@
-['AEE', 'SAIA', 'SIG']
+['AEE', 'PEG', 'BXMT', 'XLU', 'FE', 'AWK', 'MAT', 'CRM']

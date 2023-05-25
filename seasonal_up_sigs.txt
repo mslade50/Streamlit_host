@@ -1,1 +1,1 @@
-['DHR', 'MLKN', 'GES', 'WMT', 'KMX', 'BCRX', 'ENTG', 'KBR', 'LSCC', 'AZTA', '^IXIC', 'AVGO', 'DEO', 'DLTR', 'BRKR', 'CORT', 'CRL', 'NTRS', 'AVT', 'SA', 'CIEN', 'PRO', 'NATI', 'EWZ', 'CIB', 'ASML', 'STT', '^NYA']
+['EURUSD=X', 'KMX', 'BCRX', 'AZTA', 'SNPS', 'DEO', 'M', 'FUL', 'USDMXN=X']
