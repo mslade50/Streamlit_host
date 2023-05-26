@@ -1,1 +1,1 @@
-['AEE', 'PEG', 'BXMT', 'XLU', 'FE', 'AWK', 'MAT', 'CRM']
+['GOOD', 'AEE', 'EPR', 'O', 'AWK', 'PEAK', 'MAT', 'CRM']

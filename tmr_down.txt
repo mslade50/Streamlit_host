@@ -1,1 +1,1 @@
-['PEAK', 'LAC', 'EPR', 'GOOD', 'CRM', 'PEB', 'O', 'MAT', 'UTHR', 'AEE', 'AWK']
+['LAC', 'EQR', 'BGS', 'EXR', 'HST', 'UTHR', 'VNQ']

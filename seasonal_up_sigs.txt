@@ -1,1 +1,1 @@
-['EURUSD=X', 'KMX', 'BCRX', 'AZTA', 'SNPS', 'DEO', 'M', 'FUL', 'USDMXN=X']
+['AZTA', 'CPRX', 'BWA', 'CIB', 'QDEL', 'CORT', 'RBA']
