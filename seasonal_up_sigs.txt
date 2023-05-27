@@ -1,1 +1,1 @@
-['AZTA', 'CPRX', 'BWA', 'CIB', 'QDEL', 'CORT', 'RBA']
+['BWA', 'CCRN']
