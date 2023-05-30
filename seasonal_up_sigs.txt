@@ -1,1 +1,1 @@
-['BWA', 'CCRN']
+['EURCHF=X', 'BWA', 'CCRN']
