@@ -1,1 +1,1 @@
-['IPGP', 'NEA', 'CRK', 'CL', 'ONB', 'LDOS', 'NG=F']
+['BLFS', 'CNX', 'NEA', 'DTE', 'ONB', 'LDOS']
