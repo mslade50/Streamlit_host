@@ -1,1 +1,1 @@
-['PENN', 'BMY', 'DECK']
+['PENN', 'EBIX', 'DECK', 'VLY', 'CRUS', 'GILD', 'GS']
