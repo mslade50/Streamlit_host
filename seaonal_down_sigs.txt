@@ -1,1 +1,1 @@
-['LDOS', 'NEA', 'ONB', 'BLFS']
+['CNX', 'ETR', 'BLFS']
