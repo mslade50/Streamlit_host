@@ -1,1 +1,1 @@
-['CONN', 'MASI', 'PENN', 'TTMI', 'OMCL', 'AMX', 'OSTK', 'ORA', 'RYN', 'COST', 'MA', 'KDP', 'VZ', 'SSB', 'SPY']
+['GPS', 'ODFL', 'CVI', 'CONN', 'HDB', 'MASI', 'CHRW', 'ZUMZ', 'GLNG', 'MCHP', 'OMCL', 'JAZZ', 'AMX', 'OSTK', 'ULTA', 'ORA', 'TPX', 'HSIC', 'DXCM', 'KTOS', 'COST', 'MA', 'SYK', 'MTN', 'VZ', 'SSB', 'BIDU', '^SOX', 'SPY', 'QQQ']
