@@ -1,1 +1,1 @@
-['BLFS']
+['EURCHF=X']
