@@ -1,1 +1,1 @@
-['EURCHF=X']
+['LOGI', 'CTRA', 'USDCHF=X', 'EURCHF=X']

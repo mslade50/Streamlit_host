@@ -1,1 +1,1 @@
-['GPS', 'CVI', 'CONN', 'ZUMZ', 'KNX', 'GLNG', 'MCHP', 'BYD', 'OMCL', 'JAZZ', 'ALK', 'AMX', 'WWW', 'OSTK', 'BKE', 'ORA', 'PPG', 'TPX', 'MAG', 'TSEM', 'KTOS', 'COST', 'LMT', 'MA', 'BIDU', 'QQQ']
+['PEGA', 'AMZN', 'ZUMZ', 'FL', 'PDCO', 'AMX', 'AGCO', 'HUN', 'SA', 'MAG', 'BMY', 'PODD', 'LMT', 'ACN', 'FFIN', 'TJX', 'POR', 'FCF', 'WAFD', 'CUTR', 'HRL', 'ZYXI', '^IXIC']

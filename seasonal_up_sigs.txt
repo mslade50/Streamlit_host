@@ -1,1 +1,1 @@
-['ZUMZ', 'ULTA', 'COST', 'DXCM', 'MASI', 'CONN', 'ORA', 'MA', 'MCHP', 'OMCL', 'ODFL', 'AMX', 'QQQ', 'TPX', 'KTOS', 'GPS', 'GLNG', 'OSTK', 'SYK', 'VZ', '^SOX', 'HSIC', 'HDB', 'MTN', 'SSB', 'BIDU', 'SPY']
+['BMY', 'ZUMZ', 'HRL', 'CUTR', 'LMT', 'GLNG', 'FAST', 'ALK', 'BIDU']
